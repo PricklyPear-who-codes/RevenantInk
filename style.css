@@ -107,3 +107,48 @@ body {
     background-color: none;
     color: #ac5891;
 }
+
+/* ==========================================
+   GLOBAL RESPONSIVE MOBILE TWEAKS
+   ========================================== */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 18px; /* Slightly smaller baseline text sizes for smaller mobile viewports */
+    }
+
+    #nav {
+        height: 70px; /* Slims down the navbar height so it leaves more room for content */
+    }
+
+    #logo {
+        width: 50px;  /* Scales down the logo size */
+        height: 50px;
+    }
+
+    .body-content {
+        margin-top: 70px; /* Matches the new 70px navbar height */
+        height: calc(100vh - 70px);
+        padding: 15px;    /* Marginally packs the borders tighter for small device screens */
+    }
+    
+    #rightsidecontainer {
+        gap: 8px; /* Reduces spacing between logo and 'Revenant Ink Collective' */
+        padding-left: 8px;
+    }
+
+    #leftsidecontainer {
+        gap: 10px; /* Brings nav links slightly closer together so they don't break lines */
+        padding-right: 10px;
+    }
+
+    .logoHeader {
+        font-size: 16px; /* Safely downsizes the header branding text */
+    }
+}
+
+/* Ultra-small screen safety (iPhone SE and small devices) */
+@media screen and (max-width: 380px) {
+    .logoHeader {
+        display: none; /* Hides just the logo text on microscopically small devices to prevent breaking layout */
+    }
+}
