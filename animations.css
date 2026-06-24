@@ -35,7 +35,7 @@
     animation: animateInLeft 0.25s ease-out forwards;
 }
 .d1 {
-    animation: animateInLeft 0.5s ease-out forwards;
+    animation: animateInLeft 0.5s ease-out forwards
 }
 .nav2 {
     animation: animateInLeft 0.75s ease-out forwards;
@@ -52,7 +52,7 @@
    ========================================== */
 @media screen and (max-width: 768px) {
     
-    /* Shorter travel distances so elements don't fly off small screens */
+    /* Short, modern travel distances to avoid screen clipping */
     @keyframes animateInRightMobile {
         0% {
             transform: translateX(-4px);
@@ -75,7 +75,7 @@
         }
     }
 
-    /* Snappier speed settings for quick mobile interactions */
+    /* Snappier speed overrides for mobile processors */
     #logo {
         animation: animateInRightMobile 0.4s ease-out forwards;
     }
@@ -87,15 +87,15 @@
         animation: animateInLeftMobile 0.2s ease-out forwards;
     }
     .d1 {
-        animation: animateInLeftMobile 0.3s ease-out forwards;
+        animation: animateInLeftMobile 0.25s ease-out forwards;
     }
     .nav2 {
-        animation: animateInLeftMobile 0.4s ease-out forwards;
+        animation: animateInLeftMobile 0.3s ease-out forwards;
     }
     .d2 {
-        animation: animateInLeftMobile 0.5s ease-out forwards;
+        animation: animateInLeftMobile 0.35s ease-out forwards;
     }
     .nav3 {
-        animation: animateInLeftMobile 0.6s ease-out forwards;
+        animation: animateInLeftMobile 0.4s ease-out forwards;
     }
 }
