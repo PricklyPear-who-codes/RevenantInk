@@ -45,6 +45,8 @@ body {
     display: flex; 
     align-items: center; 
     gap: 12px; 
+    user-select: none;
+    -moz-user-select: none;
 }
 
 #leftsidecontainer {
@@ -52,6 +54,8 @@ body {
     display: flex; 
     align-items: center;
     gap: 15px;              /* Adds space between links and dividers */
+    user-select: none;
+    -moz-user-select: none;
 }
 
 /* Specific styling for your contact links so they don't break global link styles later */
