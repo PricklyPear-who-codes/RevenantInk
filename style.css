@@ -23,6 +23,10 @@ body {
     box-sizing: border-box; /* Keeps borders from pushing width past 100% */
 }
 
+.contentHeader {
+    color: #e8e2d5;
+}
+
 #logo {
     width: 80px;
     height: 80px;
@@ -66,7 +70,11 @@ body {
     opacity: 0.5;           /* Makes the "|" separating line a subtle gray */
 }
 
-#body-content {
+.seperateColorWay {
+    color: peru;
+}
+
+.body-content {
     background-color: #1a1a1a;  /* Premium charcoal black */
     color: #e8e2d5;             /* Soft parchment off-white pulled from the logo typography */
     margin-top: 90px;           /* Pushes container down so it sits perfectly below the 90px navbar */
@@ -75,11 +83,21 @@ body {
     overflow-y: auto;           /* Creates an internal scrollbar here if content is too long */
     padding: 20px; 
     box-sizing: border-box;     /* Ensures padding stays inside the 100% width restriction */
+    font-family: "Playfair Display", serif;
+}
+
+.seperateColorWay::selection {
+    background-color: none;
+    color:#ac5891;
 }
 
 ::selection {
     background-color: none;
-    color: peru;
+    color:blueviolet;
+}
+.seperateColorWay::-moz-selection {
+    background-color: none;
+    color: #ac5891;
 }
 ::-moz-selection {
     background-color: none;
