@@ -1,1 +1,43 @@
+@keyframes animateInRight {
+    0% {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
+@keyframes animateInLeft {
+    0% {
+        transform: translateX(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+#logo {
+    animation: animateInRight 0.625s ease-out forwards;
+}
+#rightsidecontainer {
+    animation: animateInRight 1.25s ease-out forwards;
+}
+
+.nav1 {
+    animation: animateInLeft 0.25s ease-out forwards;
+}
+.d1 {
+    animation: animateInLeft 0.5s ease-out forwards
+}
+.nav2 {
+    animation: animateInLeft 0.75s ease-out forwards;
+}
+.d2 {
+    animation: animateInLeft 1s ease-out forwards;
+}
+.nav3 {
+    animation: animateInLeft 1.25s ease-out forwards;
+}
