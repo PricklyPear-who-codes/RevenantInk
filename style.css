@@ -99,21 +99,21 @@ body {
 
 /* 1. Global text highlight (for regular text) */
 ::selection {
-    background-color: #222222; /* Solid dark charcoal block so text stands out on iOS */
+    background-color: transparent; /* Solid dark charcoal block so text stands out on iOS */
     color: blueviolet;         /* Your custom text color */
 }
 ::-moz-selection {
-    background-color: #222222;
+    background-color: transparent;
     color: blueviolet;
 }
 
 /* 2. Specific colorway highlight (for "REVENANT" and "Custom") */
 .seperateColorWay::selection {
-    background-color: #222222; /* Matches the solid highlight block */
+    background-color: transparent; /* Matches the solid highlight block */
     color: #ac5891;            /* Your custom pink/magenta text color */
 }
 .seperateColorWay::-moz-selection {
-    background-color: #222222;
+    background-color: transparent;
     color: #ac5891;
 }
 
