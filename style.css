@@ -99,11 +99,11 @@ body {
     background-color: none;
     color:blueviolet;
 }
+::-moz-selection {
+    background: none;
+    color: blueviolet;
+}
 .seperateColorWay::-moz-selection {
     background-color: none;
     color: #ac5891;
-}
-::-moz-selection {
-    background-color: none;
-    color: peru;
 }
