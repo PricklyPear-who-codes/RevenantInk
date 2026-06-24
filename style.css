@@ -93,21 +93,27 @@ body {
     font-family: "Playfair Display", serif;
 }
 
-.seperateColorWay::selection {
-    background-color: none;
-    color:#ac5891;
-}
+/* ==========================================
+   MOBILE & DESKTOP SELECTION HIGHLIGHTS
+   ========================================== */
 
+/* 1. Global text highlight (for regular text) */
 ::selection {
-    background-color: none;
-    color:blueviolet;
+    background-color: #222222; /* Solid dark charcoal block so text stands out on iOS */
+    color: blueviolet;         /* Your custom text color */
 }
 ::-moz-selection {
-    background: none;
+    background-color: #222222;
     color: blueviolet;
 }
+
+/* 2. Specific colorway highlight (for "REVENANT" and "Custom") */
+.seperateColorWay::selection {
+    background-color: #222222; /* Matches the solid highlight block */
+    color: #ac5891;            /* Your custom pink/magenta text color */
+}
 .seperateColorWay::-moz-selection {
-    background-color: none;
+    background-color: #222222;
     color: #ac5891;
 }
 
